@@ -379,6 +379,10 @@ section {
   margin-bottom: 0;
 }
 
+.about img {
+  border-radius: 6px;
+}
+
 .online {
   display: inline-block;
   width: 10px;
@@ -464,6 +468,7 @@ section {
 .skills .progress-bar-wrap {
   background: #dce8f8;
   height: 10px;
+  border-radius: 50px;
 }
 
 .skills .progress-bar {
@@ -471,6 +476,7 @@ section {
   height: 10px;
   transition: 0.9s;
   background-color: #149ddd;
+  border-radius: 50px;
 }
 
 /*--------------------------------------------------------------
@@ -585,6 +591,7 @@ section {
   overflow: hidden;
   z-index: 1;
   box-shadow: 0 0 10px 0 #333;
+	border-radius: 6px;
 }
 
 .portfolio .portfolio-wrap::before {
@@ -809,6 +816,7 @@ section {
   background: #fff;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
 }
 
 .contact .info i {
@@ -880,6 +888,7 @@ section {
   padding: 30px;
   background: #fff;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
 }
 
 .contact .php-email-form .form-group {
@@ -949,6 +958,7 @@ section {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
+	border-radius: 4px;
 }
 
 .contact .php-email-form input {
@@ -965,7 +975,8 @@ section {
   padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
-  border-radius: 4px;
+  border-radius: 50px;
+  /* width: 100%; */
 }
 
 .contact .php-email-form button[type="submit"]:hover {
