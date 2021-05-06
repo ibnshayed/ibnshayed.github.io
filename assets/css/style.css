@@ -1141,14 +1141,14 @@ section {
 }
 
 .portfolio-body {
-	background: #fff;
+  background: #fff;
   padding: 20px;
 }
 
-.portfolio-body h6{
-	margin: 0;
-	text-align: center;
-	text-transform: uppercase;
+.portfolio-body h6 {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
