@@ -1214,3 +1214,7 @@ canvas {
   max-width: 100%;
   min-height: 260px !important;
 }
+
+.fb_dialog_content iframe {
+	bottom: 100px;
+}
