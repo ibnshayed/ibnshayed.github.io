@@ -1216,5 +1216,5 @@ canvas {
 }
 
 .fb_dialog_content iframe {
-	bottom: 100px;
+	bottom: 100px!important;
 }
