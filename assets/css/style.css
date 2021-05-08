@@ -199,12 +199,15 @@ h6 {
 }
 
 .nav-menu a:hover i,
-.nav-menu .active > a i,
 .nav-menu li:hover > a i {
   color: #149ddd;
 }
 
 .nav-menu .active > a i {
+  color: #fff;
+}
+
+.nav-menu:hover .active > a i {
   color: #fff;
 }
 
@@ -324,7 +327,7 @@ section {
 }
 
 .section-title h2 {
-  font-size: 48px;
+  font-size: 42px;
   font-weight: bold;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -980,21 +983,18 @@ section {
   border-radius: 50px;
 } */
 
-.btn-submit {
+.btn-button {
   background: #149ddd;
   border: 0;
-  padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
-  border-radius: 50px;
-  /* width: 100%; */
 }
 
 /* .contact .php-email-form button[type="submit"]:hover {
   background: #37b3ed;
 } */
 
-.btn-submit:hover {
+.btn-button:hover {
   color: #fff;
   background: #37b3ed;
 }
@@ -1216,5 +1216,5 @@ canvas {
 }
 
 .fb_dialog_content iframe {
-	bottom: 100px!important;
+  bottom: 100px !important;
 }
