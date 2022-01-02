@@ -403,6 +403,16 @@ section {
 .facts .count-box {
   padding: 30px;
   width: 100%;
+	background-color: white;
+	box-shadow: 0 0 10px 0 #149ddd;
+	border-radius: 1rem;
+}
+
+.facts .count-box:hover {
+	background-color: gold;
+	box-shadow: 0 0 10px 0 #ff0000;
+	transition: all 0.3s ease-in-out;
+	transform: translateY(-10px)
 }
 
 .facts .count-box i {
