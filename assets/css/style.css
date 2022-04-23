@@ -837,8 +837,9 @@ section {
   padding: 30px;
   background: #fff;
   width: 100%;
-  box-shadow: 0 0 10px 0 rgba(100 100 100 / 50%);
-  border-radius: 10px;
+  /* box-shadow: 0 0 10px 0 rgba(100 100 100 / 50%); */
+  box-shadow: 0 0 10px 0 #149ddd;
+	border-radius: 10px;
   border-bottom: 4px solid #149ddd;
 }
 
@@ -910,7 +911,8 @@ section {
   width: 100%;
   padding: 30px;
   background: #fff;
-  box-shadow: 0 0 10px 0 rgba(100 100 100 / 50%);
+  /* box-shadow: 0 0 10px 0 rgba(100 100 100 / 50%); */
+	box-shadow: 0 0 10px 0 #149ddd;
   border-radius: 10px;
   border-bottom: 4px solid #149ddd;
 }
