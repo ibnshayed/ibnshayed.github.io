@@ -406,13 +406,19 @@ section {
 	background-color: white;
 	box-shadow: 0 0 10px 0 #149ddd;
 	border-radius: 1rem;
+	overflow: hidden;
 }
 
 .facts .count-box:hover {
-	background-color: gold;
-	box-shadow: 0 0 10px 0 #ff0000;
-	transition: all 0.3s ease-in-out;
-	transform: translateY(-10px)
+	/* background-color: #149ddd; */
+	/* transition: all 0.3s linear; */
+	/* transform: translateY(-10px) */
+}
+
+.facts .count-box:hover i,
+.facts .count-box:hover span,
+.facts .count-box:hover p{
+	color: white
 }
 
 .facts .count-box i {
