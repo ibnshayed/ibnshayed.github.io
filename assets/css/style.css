@@ -176,8 +176,8 @@ h6 {
   color: #a8a9b4;
   padding: 12px 15px;
   margin-bottom: 8px;
-  transition: 0.3s;
   font-size: 15px;
+	transition: all .6s ease-in-out;
 }
 
 .nav-menu a i {
