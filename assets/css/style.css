@@ -1170,6 +1170,8 @@ section {
 .portfolio-body {
   background: #fff;
   padding: 20px;
+	border-top: 1px solid #eee;
+	color: #173b6c;
 }
 
 .portfolio-body h6 {
