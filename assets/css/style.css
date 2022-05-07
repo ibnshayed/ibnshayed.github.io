@@ -416,7 +416,7 @@ section {
   padding: 30px;
   width: 100%;
 	background-color: white;
-	box-shadow: 0 0 10px 0 #149ddd;
+	box-shadow: 0 0 10px -4px #149ddd;
 	border-radius: 1rem;
 	overflow: hidden;
 }
@@ -621,7 +621,7 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  box-shadow: 0 0 6px 0 rgba(100 100 100 / 10%);
+  box-shadow: 0 0 10px -4px #149ddd;
   border-radius: 1rem;
 }
 .portfolio .portfolio-wrap:hover {
@@ -859,7 +859,7 @@ section {
   background: #fff;
   width: 100%;
   /* box-shadow: 0 0 10px 0 rgba(100 100 100 / 50%); */
-  box-shadow: 0 0 10px 0 #149ddd;
+  box-shadow: 0 0 10px -4px #149ddd;
 	border-radius: 1rem;
   border-bottom: 5px solid #149ddd;
 	transition: all ease-in-out 0.3s;
@@ -938,7 +938,7 @@ section {
   padding: 30px;
   background: #fff;
   /* box-shadow: 0 0 10px 0 rgba(100 100 100 / 50%); */
-	box-shadow: 0 0 10px 0 #149ddd;
+	box-shadow: 0 0 10px -4px #149ddd;
   border-radius: 1rem;
   border-bottom: 5px solid #149ddd;
 	transition: all ease-in-out 0.3s;
