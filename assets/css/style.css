@@ -621,9 +621,12 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  box-shadow: 0 0 6px 0 rgba(100 100 100 / 50%);
-  border-radius: 6px;
-  border-bottom: 4px solid #149ddd;
+  box-shadow: 0 0 6px 0 rgba(100 100 100 / 10%);
+  border-radius: 1rem;
+}
+.portfolio .portfolio-wrap:hover {
+  border-bottom: 5px solid #149ddd;
+
 }
 
 .portfolio .portfolio-wrap::before {
@@ -857,8 +860,13 @@ section {
   width: 100%;
   /* box-shadow: 0 0 10px 0 rgba(100 100 100 / 50%); */
   box-shadow: 0 0 10px 0 #149ddd;
-	border-radius: 10px;
-  border-bottom: 4px solid #149ddd;
+	border-radius: 1rem;
+  border-bottom: 5px solid #149ddd;
+	transition: all ease-in-out 0.3s;
+}
+
+.contact .info:hover {
+	transform: translateY(-10px);
 }
 
 .contact .info i {
@@ -931,8 +939,13 @@ section {
   background: #fff;
   /* box-shadow: 0 0 10px 0 rgba(100 100 100 / 50%); */
 	box-shadow: 0 0 10px 0 #149ddd;
-  border-radius: 10px;
-  border-bottom: 4px solid #149ddd;
+  border-radius: 1rem;
+  border-bottom: 5px solid #149ddd;
+	transition: all ease-in-out 0.3s;
+}
+
+.contact .php-email-form:hover {
+	transform: translateY(-10px)
 }
 
 .contact .php-email-form .form-group {
@@ -1182,7 +1195,6 @@ section {
 .portfolio-body {
   background: #fff;
   padding: 20px;
-	border-top: 1px solid #eee;
 	color: #173b6c;
 }
 
