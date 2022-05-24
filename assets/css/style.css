@@ -31,6 +31,18 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
 }
 
+#hideAll {
+   position: fixed;
+   left: 0px; 
+   right: 0px; 
+   top: 0px; 
+   bottom: 0px; 
+   background: white;
+	 overflow: hidden;
+   z-index: 999999999; /* Higher than anything else in the document */
+
+ }
+
 a {
   color: #149ddd;
   text-decoration: none;
@@ -1338,4 +1350,170 @@ canvas {
   100% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
+}
+
+/* ---------------------------epic spinners---------------------- */
+.loader{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+/* ----------------------- 1st spinner -----------------------------------*/
+.flower-spinner,  .flower-spinner * {
+	box-sizing: border-box;
+}
+
+.flower-spinner {
+	height: 100px;
+	width: 100px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.flower-spinner .dots-container {
+	height: calc(70px / 7);
+	width: calc(70px / 7);
+}
+
+.flower-spinner .smaller-dot {
+	background: #ff1d5e;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	animation: flower-spinner-smaller-dot-animation 2.5s 0s infinite both;
+
+}
+
+.flower-spinner .bigger-dot {
+	background: #ff1d5e;
+	height: 100%;
+	width: 100%;
+	padding: 10%;
+	border-radius: 50%;
+	animation: flower-spinner-bigger-dot-animation 2.5s 0s infinite both;
+}
+
+@keyframes flower-spinner-bigger-dot-animation {
+	0%, 100% {
+		box-shadow: rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px;
+	}
+
+	50% {
+		transform: rotate(180deg);
+	}
+
+	25%, 75% {
+		box-shadow: rgb(255, 29, 94) 26px 0px 0px,
+		rgb(255, 29, 94) -26px 0px 0px,
+		rgb(255, 29, 94) 0px 26px 0px,
+		rgb(255, 29, 94) 0px -26px 0px,
+		rgb(255, 29, 94) 19px -19px 0px,
+		rgb(255, 29, 94) 19px 19px 0px,
+		rgb(255, 29, 94) -19px -19px 0px,
+		rgb(255, 29, 94) -19px 19px 0px;
+	}
+
+	100% {
+		transform: rotate(360deg);
+		box-shadow: rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px;
+	}
+}
+
+@keyframes flower-spinner-smaller-dot-animation {
+	0%, 100% {
+		box-shadow: rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px;
+	}
+
+	25%, 75% {
+		box-shadow: rgb(255, 29, 94) 14px 0px 0px,
+		rgb(255, 29, 94) -14px 0px 0px,
+		rgb(255, 29, 94) 0px 14px 0px,
+		rgb(255, 29, 94) 0px -14px 0px,
+		rgb(255, 29, 94) 10px -10px 0px,
+		rgb(255, 29, 94) 10px 10px 0px,
+		rgb(255, 29, 94) -10px -10px 0px,
+		rgb(255, 29, 94) -10px 10px 0px;
+	}
+
+	100% {
+		box-shadow: rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px,
+		rgb(255, 29, 94) 0px 0px 0px;
+	}
+}
+
+/* -------------------------------2nd spinner------------------------- */
+.hollow-dots-spinner, .hollow-dots-spinner * {
+	box-sizing: border-box;
+}
+
+.hollow-dots-spinner {
+	height: 15px;
+	width: calc(30px * 3);
+	margin-top: 10px;
+}
+
+.hollow-dots-spinner .dot {
+	width: 15px;
+	height: 15px;
+	margin: 0 calc(15px / 2);
+	border: calc(15px / 5) solid #ff1d5e;
+	border-radius: 50%;
+	float: left;
+	transform: scale(0);
+	animation: hollow-dots-spinner-animation 1000ms ease infinite 0ms;
+}
+
+.hollow-dots-spinner .dot:nth-child(1) {
+	animation-delay: calc(300ms * 1);
+}
+
+.hollow-dots-spinner .dot:nth-child(2) {
+	animation-delay: calc(300ms * 2);
+}
+
+.hollow-dots-spinner .dot:nth-child(3) {
+	animation-delay: calc(300ms * 3);
+
+}
+
+@keyframes hollow-dots-spinner-animation {
+	50% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
 }
