@@ -253,8 +253,8 @@
 					</p>
 				</div>
 
-				<div class="container" data-aos="fade-up">
-					<div class="fw-bold fs-5 my-2">Programming Language:</div>
+				<div class="container mb-4" data-aos="fade-up">
+					<div class="fw-bold fs-4 my-2">Programming Language:</div>
 					<div class="row">
 					<div class="col-4 col-md-2 col-lg-1">
 							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
@@ -285,8 +285,8 @@
 				</div>
 			</div>
 
-			<div class="container" data-aos="fade-up">
-				<div class="fw-bold fs-5 my-2">Back-End Frameworks:</div>
+			<div class="container mb-4" data-aos="fade-up">
+				<div class="fw-bold fs-4 my-2">Back-End Frameworks:</div>
 				<div class="row">
 
 				<div class="col-4 col-md-2 col-lg-1">
@@ -318,8 +318,8 @@
 			</div>
 
 
-			<div class="container" data-aos="fade-up">
-				<div class="fw-bold fs-5 my-2">Front-End Frameworks:</div>
+			<div class="container mb-4" data-aos="fade-up">
+				<div class="fw-bold fs-4 my-2">Front-End Frameworks:</div>
 				<div class="row">
 
 				<div class="col-4 col-md-2 col-lg-1">
@@ -367,8 +367,8 @@
 			</div>
 
 
-			<div class="container" data-aos="fade-up">
-				<div class="fw-bold fs-5 my-2">Databases:</div>
+			<div class="container mb-4" data-aos="fade-up">
+				<div class="fw-bold fs-4 my-2">Databases:</div>
 				<div class="row">
 
 				<div class="col-4 col-md-2 col-lg-1">
@@ -391,8 +391,8 @@
 				</div>
 			</div>
 
-			<div class="container" data-aos="fade-up">
-				<div class="fw-bold fs-5 my-2">Microservices:</div>
+			<div class="container mb-4" data-aos="fade-up">
+				<div class="fw-bold fs-4 my-2">Microservices:</div>
 				<div class="row">
 
 				<div class="col-4 col-md-2 col-lg-1">
@@ -407,8 +407,8 @@
 				</div>
 			</div>
 
-			<div class="container" data-aos="fade-up">
-				<div class="fw-bold fs-5 my-2">DevOps:</div>
+			<div class="container mb-4" data-aos="fade-up">
+				<div class="fw-bold fs-4 my-2">DevOps:</div>
 				<div class="row">
 
 				<div class="col-4 col-md-2 col-lg-1">
@@ -430,8 +430,8 @@
 				</div>
 			</div>
 
-			<div class="container" data-aos="fade-up">
-				<div class="fw-bold fs-5 my-2">Mobile App:</div>
+			<div class="container mb-4" data-aos="fade-up">
+				<div class="fw-bold fs-4 my-2">Mobile App:</div>
 				<div class="row">
 
 				<div class="col-4 col-md-2 col-lg-1">
@@ -441,8 +441,8 @@
 				</div>
 			</div>
 
-			<div class="container" data-aos="fade-up">
-				<div class="fw-bold fs-5 my-2">Desktop App:</div>
+			<div class="container mb-4" data-aos="fade-up">
+				<div class="fw-bold fs-4 my-2">Desktop App:</div>
 				<div class="row">
 
 				<div class="col-4 col-md-2 col-lg-1">
@@ -452,8 +452,8 @@
 				</div>
 			</div>
 
-			<div class="container" data-aos="fade-up">
-				<div class="fw-bold fs-5 my-2">Version Control:</div>
+			<div class="container mb-4" data-aos="fade-up">
+				<div class="fw-bold fs-4 my-2">Version Control:</div>
 				<div class="row">
 
 				<div class="col-4 col-md-2 col-lg-1">
@@ -739,7 +739,7 @@
 						<div class="resume-item">
 							<h2>Jatri</h2>
 							<h4>Software Engineer (Backend)</h4>
-							<h5>1 August, 2021 - Present</h5>
+							<h5 id="jatri">1 August, 2021 - Present</h5>
 							<p><em>House: 57, Rd No.: 4, Dhaka 1213, Bangladesh.</em></p>
 							<p> <strong> Website: </strong>
 								<a href="http://jatri.co/" target="_blank">http://jatri.co/</a>
@@ -765,7 +765,7 @@
 						<div class="resume-item">
 							<h2>BlueBay IT Limited</h2>
 							<h4>Jr. Software Engineer (Backend)</h4>
-							<h5>1 June, 2021 - 31 July, 2021</h5>
+							<h5 id="bbit">1 June, 2021 - 31 July, 2021</h5>
 							<p><em>House No: 1862, Road No: 06, Sriti Dhara, Japani Bazar, Sani Akhra, Jatra Bari, Dhaka-1236,
 									Bangladesh.</em></p>
 							<p> <strong> Website: </strong>
@@ -788,7 +788,7 @@
 						<div class="resume-item">
 							<h2>Oushod Sheba</h2>
 							<h4>Web Developer (Intren)</h4>
-							<h5>1 July, 2020 - 31 October, 2020 (4 Months)</h5>
+							<h5 id="intern">1 July, 2020 - 31 October, 2020</h5>
 							<p><em>Raod 4, Sector 1, Uttara, Dhaka, Bangladesh </em></p>
 							<p> <strong> Website: </strong>
 								<a href="https://oushodsheba.com/" target="_blank">https://oushodsheba.com/</a>
@@ -1384,6 +1384,34 @@
 		}
 	</script>
 
+<!--  -->
+<script>
+	function getDateTimeDiff(from, to){
+  let fromDateTime = new Date(from)
+  let toDateTime = new Date(to)
+  let result = toDateTime - fromDateTime
+  
+  const minute = 1000 * 60;
+const hour = minute * 60;
+const day = hour * 24;
+const month = day * 30;
+const year = day * 365;
+
+// Divide Time with a year
+let years = Math.round(result / year);
+let months = Math.round(result / month) - years * 12;
+console.log(years)
+
+  let message = ""
+  message += years > 0 ? years : "0"
+  message += months > 0 ? "." +  months : ".1"
+  message += " years"
+  return message
+}
+document.getElementById("jatri").innerHTML += ` (${getDateTimeDiff("2021-08-01", new Date())})`;
+document.getElementById("bbit").innerHTML += ` (${getDateTimeDiff("2021-06-01", "2021-07-31")})`;
+document.getElementById("intern").innerHTML += ` (${getDateTimeDiff("2020-07-01", "2020-10-31")})`;
+</script>
 
 </body>
 </html>
