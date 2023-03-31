@@ -751,9 +751,9 @@
 						<h3 class="resume-title">Professional Experience</h3>
 						<div class="resume-item">
 							<h2>Jatri</h2>
-							<h4>Software Engineer (Backend)</h4>
+							<h4>Senior Software Engineer (Backend)</h4>
 							<h5 id="jatri">1 August, 2021 - Present</h5>
-							<p><em>House: 57, Rd No.: 4, Dhaka 1213, Bangladesh.</em></p>
+							<p><em>House: 15, Rd No: 24, Gulshan 2, Dhaka, Bangladesh.</em></p>
 							<p> <strong> Website: </strong>
 								<a href="http://jatri.co/" target="_blank">http://jatri.co/</a>
 							</p>
@@ -1097,7 +1097,7 @@
 						</p>
 						<img loading="lazy" src="assets/img/testimonials/shihab.jpeg" class="testimonial-img" alt="">
 						<h3>Md. Abdullah Al Rakib</h3>
-						<h4>Front-End Developer, OaMetrix</h4>
+						<h4>Founder at Mentor-IT Academy</h4>
 					</div>
 
 					<div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
@@ -1411,9 +1411,8 @@ const month = day * 30;
 const year = day * 365;
 
 // Divide Time with a year
-let years = Math.round(result / year);
-let months = Math.round(result / month) - years * 12;
-console.log(years)
+let years = Math.floor(result / year);
+let months = Math.floor(result / month) - years * 12;
 
   let message = ""
   message += years > 0 ? years : "0"
