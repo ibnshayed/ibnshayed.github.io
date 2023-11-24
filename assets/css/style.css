@@ -108,7 +108,7 @@ h6 {
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
+  bottom: 129px;
   width: 300px;
   transition: all ease-in-out 0.5s;
   z-index: 9997;
@@ -181,6 +181,15 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+.no-scrollbar {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
 .nav-menu {
   padding-top: 30px;
 }
